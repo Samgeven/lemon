@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Регистрация</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Main">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+    <link href="css/modern.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/css.css">
+</head>
+<body class="bg_blue">
+    <div class="sign-in container">
+        <div class="sing-in_row row">
+            <div class="sign-in_form-wrp col-xl-6 col-lg-6 col-md-9 col-sm-10 col-12 mx-auto mt-5">
+                <h1 class="sign-in__title text-center">Вход</h1>
+                <form id="auth_form" class="sign-in_form" method="post" novalidate="novalidate">
+                    <div class="tab ">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="nav-item"><a class="nav-link active" href="#auth-tab1" data-toggle="tab" role="tab">Email</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#auth-tab2" data-toggle="tab" role="tab">По телефону</a></li>
+                        </ul>
+                        <div class="tab-content p-4">
+                            <div class="tab-pane active" id="auth-tab1" role="tabpanel">
+                                <div class="form-group">
+                                    <label for="sign-in-email">Email</label>
+                                    <input type="email" name="user_email" id="sign-in-email" class="form-control form-control-lg" placeholder="" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="sign-in-password-mail">Пароль:</label>
+                                    <input name="user_password1" type="password" id="sign-in-password-mail" class="form-control form-control-lg" placeholder="" required>
+                                </div>
+                                <label class="sign-in__lbl-small" for="sign-in-password-mail"><a href="">Забыли пароль?</a></label>
+
+                                <div class="sign-in_btn-wrp mt-3 mb-3 row">
+                                    <a class="sign-in__acc-link register__acc-link register__acc-link_spc col-xl-5 col-lg-6 col-md-6 col-sm-6" href="/registration/">Перейти к регистрации</a>
+                                    <div class="btn-wrp col-xl-3 col-xl-3 col-lg-3 col-md-3 col-sm-4">
+                                        <button class="btn btn-primary" type="submit">Войти</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="auth-tab2" role="tabpanel">
+                                <div class="form-group">
+                                    <label for="sign-in-phone">Номер мобильного телефона:</label>
+                                    <input type="text" name="mobile_phone" id="sign-in-phone" class="form-control form-control-lg masked-input" placeholder="" required data-ilonmask="mobile_phone">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="sign-in-password-phone">Пароль:</label>
+                                    <input type="text" name="user_password2" id="sign-in-password-phone" class="form-control form-control-lg" placeholder="" required>
+                                </div>
+
+                                <label class="sign-in__lbl-small" for="sign-in-password-mail"><a href="">Войти с кодом из SMS</a></label>
+
+                                <div class="sign-in_btn-wrp mt-3 mb-3 row">
+                                    <a class="sign-in__acc-link register__acc-link register__acc-link_spc col-xl-5 col-lg-6 col-md-6 col-sm-6" href="/registration/">Перейти к регистрации</a>
+                                    <div class="btn-wrp col-xl-3 col-xl-3 col-lg-3 col-md-3 col-sm-4">
+                                        <button class="btn btn-primary" type="submit">Войти</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <a class="to-mainpage-link text-center mt-4" href="/">Вернуться на главную</a>
+    </div>
+
+    <script src="js/app.js"></script>
+
+    <script type="text/javascript" charset="utf-8" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/localization/messages_ru.min.js"></script>
+    <script src="js/js.js"></script>
+    <script src="js/sign-in.js"></script>
+
+</body>

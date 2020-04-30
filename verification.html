@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Регистрация</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Main">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+    <link href="css/modern.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/css.css">
+</head>
+<body class="bg_blue">
+    <div class="register container">
+        <div class="register-info_wrp text-center">
+            <h1 class="register__title register__title_spc col-xl-6">Регистрация инвестора</h1>
+            <div class="register__note text_big register__note_spc col-xl-6 mt-3 mb-4">Подтвердите свой телефон</div>
+        </div>
+            <div class="register_row row">
+                <form id="verification_form" class="register_form col-xl-6 col-lg-6 col-md-8 col-sm-9 pt-5 m-auto" novalidate="novalidate">
+                    <p class="register__verify-note mb-4">
+                        На номер <span class="phone">+7 916-845-9495</span> было отправлено SMS с кодом подтверждения.
+                    </p>
+
+                    <div class="form-group">
+                        <label for="register-verify">Введите код из SMS:</label>
+                        <input type="text" name="sms" id="register-verify" class="form-control form-control-lg masked-input" placeholder="" data-ilonmask="sms_code" required>
+                    </div>
+                    <label for="register-verify" class="mt-1"><a href="">Отправить повторно</a> (через 27 сек.)</label>
+
+                    <div class="register_btn-wrp">
+                        <button class="btn btn-primary" type="submit">Продолжить</button>
+                    </div>
+                </form>
+            </div>
+        <a class="to-mainpage-link text-center mt-4" href="#">Вернуться на главную</a>
+    </div>
+
+    <script src="js/app.js"></script>
+
+    <script type="text/javascript" charset="utf-8" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/localization/messages_ru.min.js"></script>
+    <script src="js/js.js"></script>
+    <script src="js/verification.js"></script>
+
+</body>

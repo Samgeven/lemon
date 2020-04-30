@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Responsive Bootstrap 4 Admin &amp; Dashboard Template">
+    <meta name="author" content="Bootlab">
+
+    <title>AppStack - Admin &amp; Dashboard Template</title>
+
+    <link rel="preconnect" href="//fonts.gstatic.com/" crossorigin>
+
+    <!-- BEGIN SETTINGS -->
+    <!-- You can remove this after picking a style -->
+    <style>
+        body {
+            opacity: 0;
+        }
+    </style>
+    <!--<script src="js/settings.js"></script>-->
+
+    <!--<link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">-->
+    <link href="css/modern.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/css.css">
+    <!-- END SETTINGS -->
+</head>
+
+<body>
+<div class="wrapper">
+    <nav id="sidebar" class="sidebar">
+        <div class="sidebar-content ">
+            <a class="sidebar-brand" href="/">
+                <img src="img/logo.svg" />
+            </a>
+
+            <ul class="sidebar-nav">
+
+                <li class="sidebar-item">
+                    <ul id="pages" class="sidebar-dropdown list-unstyled " data-parent="#sidebar">
+                        <li class="sidebar-item active"><a class="sidebar-link" href="pages-profile.html">Главная</a></li>
+                        <li class="sidebar-item"><a class="sidebar-link" href="pages-settings.html">Инвестирование</a></li>
+                        <li class="sidebar-item"><a class="sidebar-link" href="pages-clients.html">Мой портфель</a></li>
+                        <li class="sidebar-item"><a class="sidebar-link" href="pages-projects.html">Мой счет</a></li>
+                        <li class="sidebar-item"><a class="sidebar-link" href="pages-invoice.html">Профиль</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main">
+        <nav class="navbar navbar-expand navbar-light bg-white">
+            <a class="sidebar-toggle d-flex mr-2">
+                <img src="img/collapse.svg" />
+            </a>
+
+            <div class="navbar-collapse collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item nav-item__balance balance d-flex align-items-center">
+                        <span class="d-none d-md-inline">Баланс:</span><span class="balance__sum ml-2">140 000 ₽</span>
+                        <button class="btn btn-secondary btn-secondary-sm ml-3 ml-sm-4">
+                            Пополнить
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                    <li class="nav-item dropdown">
+                        <a class="nav-icon dropdown-toggle d-inline-block d-sm-none pr-0 pl-3" href="#" data-toggle="dropdown">
+                            <i class="align-middle" data-feather="settings"></i>
+                        </a>
+                        <a class="nav-link dropdown-toggle user-menu__trigger ml-5 d-none d-sm-inline-block" href="#" data-toggle="dropdown">
+                            userEmail@example.com
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="pages-profile.html"><i class="align-middle mr-1" data-feather="user"></i>Меню1</a>
+                            <a class="dropdown-item" href="#"><i class="align-middle mr-1" data-feather="pie-chart"></i>Меню2</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="pages-settings.html">Меню3</a>
+                            <a class="dropdown-item" href="#">Меню4</a>
+                            <a class="dropdown-item" href="#">Меню5</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="content">
+            <div class="container-fluid p-0">
+
+                <!-- контент -->
+                <h1 class="h3 mb-3">Создание профиля инвестора</h1>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="card-title mb-0 mt-3">Я инвестирую как:</h5>
+                            </div>
+                            <div class="card-body pt-0">
+                                <form novalidate="novalidate" class="validatable" method="post">
+                                    <div class="form-group">
+                                    <label class="custom-control custom-radio">
+                                        <input name="profile-type" type="radio" class="custom-control-input" required>
+                                        <span class="custom-control-label">Физическое лицо</span>
+                                        <small class="form-text text-muted">Потребуется паспорт. Сумма инвестиций ограничена 600 000 ₽ в год.</small>
+                                    </label>
+                                    </div>
+                                    <div class="form-group">
+                                    <label class="custom-control custom-radio">
+                                        <input name="profile-type" type="radio" class="custom-control-input" required>
+                                        <span class="custom-control-label">Индивидуальный предприниматель (ИП)</span>
+                                        <small class="form-text text-muted">Потребуется паспорт, копии ИНН компании и свидетельство</small>
+                                    </label>
+                                    </div>
+                                    <div class="form-group">
+                                    <label class="custom-control custom-radio">
+                                        <input name="profile-type" type="radio" class="custom-control-input" required>
+                                        <span class="custom-control-label">Юридическое лицо (ООО, ЗАО, ПАО)</span>
+                                        <small class="form-text text-muted">Потребуется паспорт руководителя и копии уставных документов компании</small>
+                                    </label>
+                                    </div>
+                                    <div class="text-right">
+                                        <button type="submit" class="btn btn-primary">Продолжить</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- контент -->
+
+            </div>
+        </main>
+
+        <!--<footer class="footer">
+            <div class="container-fluid">
+                <div class="row text-muted">
+                    <div class="col-12">
+
+                    </div>
+                </div>
+            </div>
+        </footer>-->
+    </div>
+</div>
+
+<script src="js/app.js"></script>
+
+<script type="text/javascript" charset="utf-8" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/localization/messages_ru.min.js"></script>
+<script src="js/js.js"></script>
+
+
+</body>
+
+</html>

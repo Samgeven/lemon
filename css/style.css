@@ -1,0 +1,112 @@
+/* Common styles */
+.text_big {
+	font-size: 1rem;
+	line-height: 1.5rem;
+}
+
+.text_semibold {
+	font-weight: 600;
+}
+
+.text_bold {
+	font-weight: 800;
+}
+
+.bg_blue {
+	background-color: #F9FEFF;
+}
+
+.wrapper-boxed {
+	max-width: 1280px;
+}
+
+.mt-2rem {
+	margin-top: 2rem;
+}
+
+/* Register form */
+
+.register-info_wrp {
+	margin: 5rem auto 0rem;
+}
+
+.register__note_spc,
+.register__title_spc {
+	margin: 0 auto;
+	color: #354052;
+}
+
+.register_form {
+	padding-left: 2rem;
+	padding-right: 2rem;
+	background-color: #FFFFFF;
+}
+
+/* Register buttons */
+
+.register_btn-wrp {
+	display: flex;
+	margin-top: 2rem;
+	margin-bottom: 1.5rem;
+	align-items: center;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+.register__acc-link {
+	font-size: 0.75rem;
+	line-height: 1rem;
+}
+
+.register__acc-link_spc {
+	padding: 10px 16px;
+	display: block;
+}
+
+@media screen and (max-width: 576px) {
+	.register__acc-link_spc {
+		order: 2;
+	}
+}
+
+
+.to-mainpage-link {
+	color: #5075D3;
+	font-size: 1.125rem;
+	line-height: 1.5rem;
+	display: block;
+	position: relative;
+}
+
+.to-mainpage-link:before {
+	content: "←";
+	position: absolute;
+	margin-left: -1.5rem;
+	font-size: 14px;
+}
+
+/* Sing-in forms */
+
+.sign-in__nav-link {
+	border: none !important;
+	color: #354052;
+	padding: 0.75rem 1rem;
+}
+
+.sign-in__acc-link {
+	font-size: 1rem;
+	line-height: 1.5rem;
+}
+
+.sign-in_btn-wrp {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.sign-in__lbl-small {
+	color: #007ce5;
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+}
